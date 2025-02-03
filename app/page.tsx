@@ -1,7 +1,10 @@
-import Image from "next/image";
+
+import Navbar from "./components/Navbar";
 
 export default function Home() {
   return (
-   <h1 className="text-slate-400 uppercase">weather analysis web applications</h1>
+    <main className="mx-[1rem] lg:mx-[2rem] xl:mx-[6rem] 2xl:mx-[16rem] m-auto">
+ <Navbar/>
+    </main>
   );
 }

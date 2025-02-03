@@ -1,0 +1,31 @@
+import {
+  Github,
+  Command,
+  Search,
+  CloudDrizzle,
+  CloudRain,
+  CloudSun,
+  Snowflake,
+  Sunset,
+  Wind,
+  Cloudy,
+  Gauge,
+  Navigation,
+  ThermometerSun,
+} from "lucide-react";
+export const icons = {
+  Github,
+  Command,
+
+  Search,
+  CloudDrizzle,
+  CloudRain,
+  CloudSun,
+  Snowflake,
+  Sunset,
+  Wind,
+  Cloudy,
+  Gauge,
+  Navigation,
+  ThermometerSun,
+};
