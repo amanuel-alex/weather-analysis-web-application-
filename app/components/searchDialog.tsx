@@ -1,11 +1,10 @@
 import React from "react";
 import { Dialog, DialogTrigger } from "@radix-ui/react-dialog";
+import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 import { Button } from "@/components/ui/button";
 import { CommandIcon } from "lucide-react";
 import { DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { Command, CommandInput } from "@/components/ui/command";
-import { VisuallyHidden } from "@/components/ui/dialog";
-
 const SearchDialog: React.FC = () => {
   return (
     <div className="mr-3">
@@ -23,11 +22,15 @@ const SearchDialog: React.FC = () => {
           </Button>
         </DialogTrigger>
         <DialogContent className="p-0">
-          <DialogTitle>Search Dialog</DialogTitle>
+          <VisuallyHidden>
+            <DialogTitle>Search Dialog</DialogTitle>
+          </VisuallyHidden>
 
           <Command className="rounded-lg border shadow-sm">
-            <CommandInput />
-            <p>hello</p>
+            <CommandInput placeholder="Type command or search ..." />
+            <ul className="px-3 py-2 ">
+              <p className="p-2 text-sm text-muted-background">Suggestion</p>
+            </ul>
           </Command>
         </DialogContent>
       </Dialog>
